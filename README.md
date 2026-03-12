@@ -12,7 +12,7 @@ The Complex-Pole Filter Representation (COFRE) method estimates the power spectr
 
 PSD estimated on a real fNIRS HbO recording. Left column uses a **band-proportional x-axis** (ENMRC: Endothelial, Neurogenic, Myogenic, Respiratory, Cardiac frequency bands). Right column uses a standard log scale.
 
-![COFRE vs Welch PSD on fNIRS data](cofre_vs_welch_fnirs.png)
+![COFRE vs Welch PSD on fNIRS data](https://raw.githubusercontent.com/AdrianOrellana/COFRE-spectrum-estimation/main/cofre_vs_welch_fnirs.png)
 
 Welch estimate computed with [`scipy.signal.welch`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.welch.html) (Hann window, 50 % overlap). COFRE resolves low-frequency oscillatory structure that Welch smears out due to limited segment length.
 
