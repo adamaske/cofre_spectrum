@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cofre-spectrum"
-version = "0.1.4"
+version = "1.0.0"
 description = "COFRE: Complex-Pole Filter Representation for spectral estimation"
 readme = "README.md"
 license = { text = "MIT" }

@@ -31,7 +31,7 @@ fnirs_obj.preprocess(pp) # Pass the preprocesser only
 
 hbo_data, ch_names, hbr_data, _ = fnirs_obj.split()
 
-channels = [0, 1, 2, 3]  # Use all 4 channels
+channels = [34, 1, 2, 3]  # Use all 4 channels
 fs = fnirs_obj.sampling_frequency
 
 # hbo_data layout is (channels × samples)
@@ -62,7 +62,7 @@ print(f"FFT resolution     : {1.0 / duration * 1e3:.4f} mHz")
 
 # Pick tau so rise time (beta=0.5) ~ 35% of recording
 target_rise_samples = 0.15 * n_samples
-tau = optimal_tau_for_rise_time(target_rise_samples, beta=0.5)
+tau = optimal_tau_for_rise_time(target_rise_samples, beta=0.3)
 
 # Don't let tau go below 3.0 (too coarse) or above 8.65 (paper's value)
 tau = float(np.clip(tau, 3.0, 8.65))
