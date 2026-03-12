@@ -2,8 +2,10 @@
 COFRE: Complex-Pole Filter Representation for Spectral Estimation
 ==================================================================
 
-Implementation following Pinto Orellana, Mirtaheri & Hammer (2021).
-arXiv:2105.13476v1
+Implementation following:
+  Pinto Orellana, M. A., Mirtaheri, P., & Hammer, H. L. (2021).
+  The Complex-Pole Filter Representation (COFRE) for spectral modeling of fNIRS signals.
+  arXiv:2105.13476  https://arxiv.org/abs/2105.13476
 
 Core idea
 ---------

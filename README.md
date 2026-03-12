@@ -4,7 +4,7 @@
 
 A Python implementation of the algorithm described in:
 
-> Pinto Orellana, Mirtaheri & Hammer (2021). *COFRE: A complex-pole filter for spectral estimation*. arXiv:2105.13476
+> Pinto Orellana, M. A., Mirtaheri, P., & Hammer, H. L. (2021). *The Complex-Pole Filter Representation (COFRE) for spectral modeling of fNIRS signals*. arXiv:2105.13476
 
 The Complex-Pole Filter Representation (COFRE) method estimates the power spectral density (PSD) at arbitrary target frequencies using a bank of first-order complex-pole IIR filters each tuned to a single frequency. It is particularly effective for non-stationary or short signals where classical FFT-based methods does not offer sufficent frequency resolution.
 
@@ -12,7 +12,7 @@ The Complex-Pole Filter Representation (COFRE) method estimates the power spectr
 
 PSD estimated on a real fNIRS HbO recording. Left column uses a **band-proportional x-axis** (ENMRC: Endothelial, Neurogenic, Myogenic, Respiratory, Cardiac frequency bands). Right column uses a standard log scale.
 
-![COFRE vs Welch PSD on fNIRS data](https://raw.githubusercontent.com/AdrianOrellana/COFRE-spectrum-estimation/main/cofre_vs_welch_fnirs.png)
+![COFRE vs Welch PSD on fNIRS data](https://raw.githubusercontent.com/adamaske/cofre_spectrum/main/cofre_vs_welch_fnirs.png)
 
 Welch estimate computed with [`scipy.signal.welch`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.welch.html) (Hann window, 50 % overlap). COFRE resolves low-frequency oscillatory structure that Welch smears out due to limited segment length.
 
@@ -102,6 +102,6 @@ tau = optimal_tau_for_frequency(delta_omega=0.05 / 20.0, alpha=0.5)
 
 ## Reference
 
-Pinto Orellana, A., Mirtaheri, P., & Hammer, H. L. (2021).
-*Complex-Pole Filter Representation for Spectral Estimation (COFRE)*.
+Pinto Orellana, M. A., Mirtaheri, P., & Hammer, H. L. (2021).
+*The Complex-Pole Filter Representation (COFRE) for spectral modeling of fNIRS signals*.
 [arXiv:2105.13476](https://arxiv.org/abs/2105.13476)
