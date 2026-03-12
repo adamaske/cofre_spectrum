@@ -105,3 +105,5 @@ tau = optimal_tau_for_frequency(delta_omega=0.05 / 20.0, alpha=0.5)
 Pinto Orellana, M. A., Mirtaheri, P., & Hammer, H. L. (2021).
 *The Complex-Pole Filter Representation (COFRE) for spectral modeling of fNIRS signals*.
 [arXiv:2105.13476](https://arxiv.org/abs/2105.13476)
+
+If you use COFRE in your work, please cite the original paper above.
